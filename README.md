@@ -7,42 +7,11 @@
 Our complete codebase will be released upon paper acceptance.
 
 Welcome to watch 👀 this repository for the latest updates.
-<table align="center">
-  <thead>
-    <tr>
-      <th>Component</th>
-      <th>Status</th>
-      <th>Date</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Relevant core code</td>
-      <td>✅ Has been released</td>
-      <td>2026-03-26</td>
-    </tr>
-    <tr>
-      <td>Evaluation code</td>
-      <td>✅ Has been released</td>
-      <td>2026-03-26</td>
-    </tr>
-    <tr>
-      <td>Loss function code</td>
-      <td>⏳ Has not been released yet</td>
-      <td>TBD</td>
-    </tr>
-    <tr>
-      <td>Complete model code</td>
-      <td>⏳ Has not been released yet</td>
-      <td>TBD</td>
-    </tr>
-    <tr>
-      <td>Training code</td>
-      <td>⏳ Has not been released yet</td>
-      <td>TBD</td>
-    </tr>
-  </tbody>
-</table>
+<p align="center"><input type="checkbox" checked disabled> [2026.3.26]: The relevant core code has been released.</p>
+<p align="center"><input type="checkbox" checked disabled> [2026.3.26]: The evaluation code has been released.</p>
+<p align="center"><input type="checkbox" disabled> The loss function code has been released.</p>
+<p align="center"><input type="checkbox" disabled> The complete model code has been released.</p>
+<p align="center"><input type="checkbox" disabled> Training code has been released.</p>
 
 
 
