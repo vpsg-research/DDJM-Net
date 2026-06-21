@@ -9,6 +9,7 @@ Our complete codebase will be released upon paper acceptance.
 Welcome to watch 👀 this repository for the latest updates.
 
 
+<table align="center">
 
 | Component           | Status                      | Date       |
 | ------------------- | --------------------------- | ---------- |
@@ -18,7 +19,7 @@ Welcome to watch 👀 this repository for the latest updates.
 | Complete model code | ⏳ Has not been released yet | TBD        |
 | Training code       | ⏳ Has not been released yet | TBD        |
 
-
+  <tr align="center">
 
 
 
