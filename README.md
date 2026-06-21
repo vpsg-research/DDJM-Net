@@ -1,5 +1,7 @@
 <div align="center">
 <h1> Deep Unfolding Network with Dual-Domain Joint Modeling for Image Manipulation Localization </h1>
+</div>
+<h1> Deep Unfolding Network with Dual-Domain Joint Modeling for Image Manipulation Localization </h1>
 
 
 ## ✨ Highlights
