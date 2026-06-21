@@ -3,6 +3,18 @@
 </div>
 
 
+## 📆 TODO
+Our complete codebase will be released upon paper acceptance.
+
+Welcome to watch 👀 this repository for the latest updates.
+
+- [x] [2026.3.26]: The relevant core code has been released.
+- [x] [2026.3.26]: The evaluation code has been released.
+- [ ] The loss function code has been released.
+- [ ] The complete model code.
+- [ ] Training code released.
+
+
 
 ## ✨ Highlights
 * 🧬**Novel Modeling Perspectives:** By integrating dual-domain joint modeling with the MRMP and ARIE modules, DDJM-Net reformulates IML as a separation process between manipulated and authentic regions, providing a new modeling perspective for IML.
