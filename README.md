@@ -8,12 +8,7 @@ Our complete codebase will be released upon paper acceptance.
 
 Welcome to watch 👀 this repository for the latest updates.
 
-- [x] [2026.3.26]: The relevant core code has been released.
-- [x] [2026.3.26]: The evaluation code has been released.
-- [ ] The loss function code has been released.
-- [ ] The complete model code.
-- [ ] Training code released.
-
+<div align="center">
 | Component           | Status                      | Date       |
 | ------------------- | --------------------------- | ---------- |
 | Relevant core code  | ✅ Has been released         | 2026-03-26 |
@@ -21,7 +16,7 @@ Welcome to watch 👀 this repository for the latest updates.
 | Loss function code  | ⏳ Has not been released yet | TBD        |
 | Complete model code | ⏳ Has not been released yet | TBD        |
 | Training code       | ⏳ Has not been released yet | TBD        |
-
+</div>
 
 
 
