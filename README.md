@@ -14,8 +14,8 @@ Our complete codebase will be released upon paper acceptance.
 
 Welcome to watch 👀 this repository for the latest updates.
 
-- [x] [2026.3.26]: The relevant core code has been released.
-- [x] [2026.3.26]: The evaluation code has been released.
+- [x] [2026.6.21]: The relevant core code has been released.
+- [x] [2026.6.23]: The evaluation code has been released.
 - [ ] The loss function code has been released.
 - [ ] The complete model code.
 - [ ] Training code released.
