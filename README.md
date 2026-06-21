@@ -32,6 +32,8 @@
 
 A summary of the datasets used in the experiments, showing their manipulation types (CM: copy-move, SP: splicing, IP: inpainting) and the train-test splits.
 
+<div align="center">
+
 |   Dataset   | Nums | #CM  | #SP  | #IP  | #Train | #Test |
 | :---------: | :--: | :--: | :--: | :--: | :----: | :---: |
 |   CASIAv2   | 5123 | 3295 | 1828 |  0   |  5123  |   0   |
@@ -43,6 +45,8 @@ A summary of the datasets used in the experiments, showing their manipulation ty
 |     DSO     | 100  |  -   | 100  |  -   |   0    |  100  |
 |   IMD2020   | 2010 |  -   |  -   |  -   |   0    | 2010  |
 |  CocoGlide  | 512  |  -   |  -   |  -   |   0    |  512  |
+
+</div>
 
 * [CASIAv2](https://github.com/SunnyHaze/IML-Dataset-Corrections)
 * [CASIAv1](https://github.com/SunnyHaze/IML-Dataset-Corrections)
