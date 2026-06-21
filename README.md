@@ -7,19 +7,42 @@
 Our complete codebase will be released upon paper acceptance.
 
 Welcome to watch 👀 this repository for the latest updates.
-
-
 <table align="center">
-
-| Component           | Status                      | Date       |
-| ------------------- | --------------------------- | ---------- |
-| Relevant core code  | ✅ Has been released         | 2026-03-26 |
-| Evaluation code     | ✅ Has been released         | 2026-03-26 |
-| Loss function code  | ⏳ Has not been released yet | TBD        |
-| Complete model code | ⏳ Has not been released yet | TBD        |
-| Training code       | ⏳ Has not been released yet | TBD        |
-
-  <tr align="center">
+  <thead>
+    <tr>
+      <th>Component</th>
+      <th>Status</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Relevant core code</td>
+      <td>✅ Has been released</td>
+      <td>2026-03-26</td>
+    </tr>
+    <tr>
+      <td>Evaluation code</td>
+      <td>✅ Has been released</td>
+      <td>2026-03-26</td>
+    </tr>
+    <tr>
+      <td>Loss function code</td>
+      <td>⏳ Has not been released yet</td>
+      <td>TBD</td>
+    </tr>
+    <tr>
+      <td>Complete model code</td>
+      <td>⏳ Has not been released yet</td>
+      <td>TBD</td>
+    </tr>
+    <tr>
+      <td>Training code</td>
+      <td>⏳ Has not been released yet</td>
+      <td>TBD</td>
+    </tr>
+  </tbody>
+</table>
 
 
 
