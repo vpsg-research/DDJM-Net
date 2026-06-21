@@ -6,7 +6,6 @@
 ## 📆 TODO
 Our complete codebase will be released upon paper acceptance.
 
-<h3 align="center">Code Availability</h3>
 
 <table align="center">
   <thead>
