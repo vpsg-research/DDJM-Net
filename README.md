@@ -14,6 +14,16 @@ Welcome to watch 👀 this repository for the latest updates.
 - [ ] The complete model code.
 - [ ] Training code released.
 
+| Component           | Status                      | Date       |
+| ------------------- | --------------------------- | ---------- |
+| Relevant core code  | ✅ Has been released         | 2026-03-26 |
+| Evaluation code     | ✅ Has been released         | 2026-03-26 |
+| Loss function code  | ⏳ Has not been released yet | TBD        |
+| Complete model code | ⏳ Has not been released yet | TBD        |
+| Training code       | ⏳ Has not been released yet | TBD        |
+
+
+
 
 
 ## ✨ Highlights
