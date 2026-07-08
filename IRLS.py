@@ -55,22 +55,19 @@ class LRLSWeightModule(nn.Module):
         self.convs = nn.Sequential(*convs)
 
     def forward(self, R_prev: torch.Tensor) -> torch.Tensor:
-        """
-        R_prev: [N, 1, H, W]，上一轮的残差 w*(M_{k-1} - M_f^{k-1})
-        返回 rho: [N, 1, H, W]，IRLS 的重加权系数（正数、带结构）
-        """
+
         assert R_prev.dim() == 4 and R_prev.size(1) == 1, \
             "R_prev 应为 [N, 1, H, W]"
 
-        # 基础 IRLS 权重：1 / (|R| + eps)
+
         rho0 = 1.0 / (torch.abs(R_prev) + self.eps)
 
-        # 学习到的结构化修正
+
         rho_delta = self.convs(rho0)
-        # softplus 保证 > 0
+
         rho = F.softplus(rho0 + rho_delta)
 
-        # 限制范围，防止数值崩溃
+
         rho = torch.clamp(rho, self.rho_min, self.rho_max)
         return rho
 
@@ -161,7 +158,7 @@ class LRLSSparsePipeline(nn.Module):
 
         rho = rho * (w_prev ** 2)             # [N,1,H,W]
 
-        # 4) IRLS 解析更新公式
+
         M_new_full = compute_formula_lrls(
             I=I,
             B_prev=B_k_1,
@@ -170,16 +167,14 @@ class LRLSSparsePipeline(nn.Module):
             rho=rho,
             mu=self.mu,
             alpha=self.alpha
-        )  # [N,C,H,W]
+        )  
 
-        # 5) 通道平均 -> 单通道掩码
+
         M_new = torch.mean(M_new_full, dim=1, keepdim=True)  # [N,1,H,W]
         return M_new
 
 
-# -----------------------------
-# 5. 简单自检（可以删掉）
-# -----------------------------
+
 if __name__ == "__main__":
 
     N, C, H, W = 2, 3, 64, 64
