@@ -133,7 +133,7 @@ imgaug==0.4.0
 ---
 ## 🚀 Training
 
-To train the DDJM‑Net model, please use the provided `train.sh` script. Before execution, ensure that the pretrained  [Res2Net-50](https://github.com/Res2Net) weights have been downloaded and adjust the relevant hyperparameters—such as learning rate, batch size, and number of training epochs—within the script according to your dataset and computational resources. Once configured, simply run the script to commence training.
+To train the DDJM‑Net model, please use the provided `train.sh` script. Before execution, ensure that the pretrained  [pvt](https://github.com/whai362/PVT) weights have been downloaded and adjust the relevant hyperparameters—such as learning rate, batch size, and number of training epochs—within the script according to your dataset and computational resources. Once configured, simply run the script to commence training.
 
 ```bash
 bash train.sh
