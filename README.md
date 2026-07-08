@@ -19,12 +19,12 @@ Our complete codebase will be released upon paper acceptance.
     <tr>
       <td>Relevant core code</td>
       <td>✅ Has been released</td>
-      <td>2026-03-26</td>
+      <td>2026-07-05</td>
     </tr>
     <tr>
       <td>Evaluation code</td>
       <td>✅ Has been released</td>
-      <td>2026-03-26</td>
+      <td>2026-07-08</td>
     </tr>
     <tr>
       <td>Loss function code</td>
