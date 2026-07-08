@@ -12,18 +12,11 @@ import torch.nn.functional as F
 from torchvision import transforms
 
 def compute_B_k_hat( B_k_1, image, m_k, Lambda):
-    # I 是全一矩阵，和 Lambda 是标量
+
     ones_matrix = torch.ones_like(image)
-
-    # 计算 (1 + Lambda) * I
     L = (1 + Lambda) * ones_matrix +1e-6
-
-   
-
-    # 计算 Lambda * B_k_1 + image - m_k * image
     term2 = Lambda * B_k_1 + image - m_k * image
 
-    # 计算最终的 B_k_hat
     B_k_hat = term2 / L
 
     return B_k_hat
