@@ -48,7 +48,7 @@ Our complete codebase will be released upon paper acceptance.
 
 ## ✨ Highlights
 * 🧬**Novel Modeling Perspectives:** By integrating dual-domain joint modeling with the MRMP and ARIE modules, DDJM-Net reformulates IML as a separation process between manipulated and authentic regions, providing a new modeling perspective for IML.
-* 🔀**Interpretability Optimization Process:** DDJM-Net models the manipulated-authentic region separation process from an optimization perspective and integrates a deep unfolding network to map the iterative optimization procedure into a multi-stage architecture, thereby providing strong interpretability.
+* 🔀**Interpretability Optimization Process:** DDJM-Net models the region separation problem from an optimization perspective and incorporates a deep unfolding network to map the iterative solving process of the model into a multi-stage network architecture, thereby providing explicit interpretability..
 * 🛡️**Excellent Experimental Performance:** Experimental results show that DDJM-Net achieves superior localization accuracy, generalization ability, and robustness, further validating the effectiveness of the proposed theoretical framework and the soundness of its modeling strategy.
 
 
