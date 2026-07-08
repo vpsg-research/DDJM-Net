@@ -175,7 +175,7 @@ def main(local_rank: int, world_size: int):
     if local_rank == 0:
         log_dir = os.path.dirname(opt.pth_path) if opt.pth_path else '.'
         os.makedirs(log_dir, exist_ok=True)
-        csv_file = os.path.join(log_dir, 'Test-xiao-wuASSSO-4.csv')
+        csv_file = os.path.join(log_dir, 'Test.csv')
 
         with open(csv_file, 'w', newline='') as f:
             writer = csv.writer(f)
