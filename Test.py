@@ -11,13 +11,11 @@ import torch.distributed as dist
 import torch.multiprocessing as mp
 from torch.nn.parallel import DistributedDataParallel as DDP
 
-from lib.Network import Network, Network_pvt, Network_pvt_duo, Network_pvt_duo_2, Network_pvt_duo_3, \
-    Network_pvt_duo_3_3Domain_gai, Network_res2net50_3Domain, Network_pvt_zj
+from lib.Network import  Network
 from util.data_val import test_dataset, create_dataloader
 
 
 def _safe_load_weights(model: torch.nn.Module, ckpt_path: str):
-    """兼容单卡/多卡保存的权重（是否带有 module. 前缀），并在 DDP 包裹前加载。"""
     state = torch.load(ckpt_path, map_location="cpu")
     if isinstance(state, dict) and "state_dict" in state:
         state = state["state_dict"]
@@ -44,9 +42,9 @@ def main(local_rank: int, world_size: int):
     parser.add_argument('--test_batchsize', type=int, default=40,
                         help='testing batch size per GPU')
     parser.add_argument('--pth_path', type=str,
-                        default='/home/zj/Experiment/Other/PVT-RUN-IML/242-RUN-IML/RUN-IML/PVT-消融/xiao-wuASSSO/Net_epoch_4.pth')
+                        default='')
     parser.add_argument('--test_dataset_path', type=str,
-                        default='/home/zj/Experiment/IML-DS/test')
+                        default='')
 
     opt = parser.parse_args()
     if opt.test_batchsize < 1:
@@ -57,15 +55,15 @@ def main(local_rank: int, world_size: int):
 
     # 根据需求可调整评测数据集顺序
     
-    # dataset_names = [  'Vis-final' ]
-    dataset_names = [  'C1', 'Coverage', 'NC16', 'Columbia', 'In-the-Wild','DSO', 'CocoGlide', 'IMD2020', 'Korus', 'Vis-final' ]
+
+    dataset_names = [  'C1', 'Coverage', 'NC16', 'Columbia', 'In-the-Wild','DSO', 'CocoGlide', 'IMD2020', 'Korus' ]
     # dataset_names = ['C1blur3', 'C1blur7', 'C1blur11', 'C1blur15', 'C1blur19', 'C1blur23', 
     #                 'C1jpeg50', 'C1jpeg60', 'C1jpeg70', 'C1jpeg80', 'C1jpeg90', 'C1jpeg100',
     #                 'C1noise3', 'C1noise7', 'C1noise11', 'C1noise15', 'C1noise19', 'C1noise23',
     #                 'CASIA_Facebook', 'CASIA_Wechat', 'CASIA_Weibo', 'CASIA_Whatsapp']
 
     # --- 构建与加载模型（在 DDP 包裹前加载权重，避免键名不匹配） ---
-    model = Network_pvt_zj(channels=32).cuda()
+    model = Network(channels=32).cuda()
     _safe_load_weights(model, opt.pth_path)
     model = DDP(model, device_ids=[local_rank], find_unused_parameters=True)
     model.eval()
