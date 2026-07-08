@@ -6,16 +6,15 @@ BATCHSIZE=2
 TRAINSIZE=512
 CLIP=0.5
 DECAY_RATE=0.1
-DECAY_EPOCH=80
 LOAD=""
 GPU_ID="0"
-TRAIN_ROOT="/home/zj/Experiment/IML-DS/train/"
-VAL_ROOT="/home/zj/Experiment/IML-DS/test/"
+TRAIN_ROOT=""
+VAL_ROOT=""
 MODEL="train"
-SAVE_PATH="/home/zj/Experiment/Other/PVT-RUN-IML/242-RUN-IML/RUN-IML/PVT-消融/xiao-5th-7.3-1"
-LOG_PATH="/home/zj/Experiment/Other/PVT-RUN-IML/242-RUN-IML/RUN-IML/PVT-消融/log/xiao-5th-7.3-1.log"
+SAVE_PATH=""
+LOG_PATH=""
 
-mkdir -p /home/zj/Experiment/Other/PVT-RUN-IML/242-RUN-IML/RUN-IML/PVT-消融/log
+mkdir -p 
 mkdir -p ${SAVE_PATH}
 
 CMD="python -u Train.py \
