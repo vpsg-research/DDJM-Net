@@ -73,7 +73,7 @@ def main(local_rank: int, world_size: int):
         data_path = os.path.join(opt.test_dataset_path, _data_name)
         save_path = os.path.join(
             './pvt-res',
-            f"{os.path.basename(os.path.dirname(opt.pth_path))}-xiao-wuASSSO-4",
+            f"{os.path.basename(os.path.dirname(opt.pth_path))}",
             _data_name,
         )
         os.makedirs(save_path, exist_ok=True)
